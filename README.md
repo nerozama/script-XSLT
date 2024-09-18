@@ -1,2 +1,12 @@
-# script-XSLT
-Esta herramienta convierte resultados de escaneo de Nmap en informes HTML detallados con XSLT. Incluye tablas interactivas y gráficos visuales para un análisis profundo de datos de red. Ideal para auditores de seguridad y administradores de red que desean presentar los resultados de manera clara y atractiva.
+# Informe de Escaneo de Nmap
+
+Este repositorio contiene un archivo XSLT para transformar archivos de salida de Nmap en informes HTML detallados.
+
+## Uso
+
+1. **Preparar el Archivo XML**: Asegúrate de tener un archivo de salida de Nmap en formato XML.
+
+2. **Transformar el Archivo XML**: Usa un transformador XSLT como `xsltproc` para aplicar la transformación.
+
+  
+   xsltproc transform.xsl nerostyle.xml -o informe.html
